@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules Silva - Tattoo Artist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff; /* Fundo branco */
+            color: #121212; /* Texto escuro para contraste */
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner {
+            background: url('banner.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h2 {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .portfolio img, .about img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .contato form {
+            max-width: 400px;
+            margin: auto;
+            background: #f8f9fa; /* Fundo claro para o formulário */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .btn-dark {
+            background-color: #121212; /* Botões pretos */
+            color: #ffffff;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s; /* Animação suave */
+        }
+        .btn-dark:hover {
+            background-color: #ffcc00; /* Mudança para o amarelo no hover */
+            transform: scale(1.05); /* Efeito de aumento sutil no hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="banner text-center text-white">
+        <div class="banner-content">
+            <h1>Hercules Silva - Tattoo Artist</h1>
+            <p class="lead">Transformando histórias em arte</p>
+            <a href="#portfolio" class="btn btn-light btn-md">Veja meus Trabalhos</a>
+        </div>
+    </header>
+    
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        /* Estilos para o header/banner */
+        .banner {
+            background: url('../hercules-site/img/background.jpeg') no-repeat center center/cover;
+            height: 100vh; /* Cobre toda a altura da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+    
+        /* Adicionando sobreposição escura para o texto se destacar */
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Escurecendo o fundo */
+        }
+    
+        .banner-content {
+            position: relative;
+            z-index: 1; /* Coloca o texto sobre a sobreposição */
+            color: #fff;
+            max-width: 700px;
+            text-align: center;
+        }
+    
+        .banner h1 {
+            font-size: 3.5rem;
+            font-family: 'Cursive', sans-serif;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
+        }
+    
+        .banner .lead {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+    
+        .banner .btn {
+            padding: 10px 20px;
+            font-size: 1.25rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+    
+        .banner .btn-light {
+            background-color: #f5a623;
+            color: #000;
+            border: none;
+        }
+    
+        .banner .btn-light:hover {
+            background-color: #f5a623;
+            color: #fff;
+        }
+    
+    </style>
+    
+    
+    <section class="about container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./img/bg.jpeg" alt="Hercules Silva">
+            </div>
+
+            <div class="col-md-6">
+                <h2>O Artista</h2>
+                <p>Hercules Silva é um tatuador apaixonado pela arte de criar obras únicas e significativas na pele de seus clientes. Sua jornada no mundo da tatuagem começou desde cedo, influenciado por seu amor pela arte e pelo desejo de transformar histórias em imagens eternas. Ao longo dos anos, Hercules desenvolveu um estilo próprio, que mistura técnicas clássicas com toques modernos, criando tatuagens que refletem a personalidade e as emoções de cada pessoa.
+                    <br><br>
+                    Com mais de 10 anos de experiência, Hercules já tatuou diversas pessoas de diferentes partes do Brasil e do mundo. Seu compromisso com a qualidade e a precisão em cada detalhe é o que o torna um profissional respeitado no ramo. Sua atenção aos desejos dos clientes e sua habilidade em interpretar suas histórias transformam cada sessão em uma experiência única e pessoal.
+                    <br><br>
+                    Além da habilidade técnica, Hercules possui uma abordagem acolhedora e empática. Ele entende que a tatuagem é muito mais do que uma simples arte corporal – é uma forma de expressão, uma maneira de marcar momentos importantes ou até mesmo de curar feridas emocionais. Por isso, ele sempre busca criar um ambiente confortável, onde os clientes se sintam à vontade para compartilhar suas ideias e sentimentos.
+                    <br><br>
+                    A técnica de Hercules vai além da simples aplicação de tinta na pele. Ele é um especialista em design, trabalhando com desenhos personalizados que refletem as emoções e histórias de seus clientes. Cada tatuagem é criada com o máximo de dedicação, sendo resultado de um processo colaborativo entre o artista e o cliente, garantindo que cada obra seja única e especial.
+                    <br>
+                </p>  
+                    
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio container py-5" id="portfolio">
+        <h2 class="text-center">Portfólio</h2>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <img src="./img/ptf1.jpeg" alt="Tattoo 1">
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="./img/ptf2.jpeg" alt="Tattoo 2">
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="./img/ptf3.jpeg" alt="Tattoo 3">
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="https://www.instagram.com/manobu_.tatuador/" class="btn btn-custom" target="_blank">Veja mais projetos</a>
+        </div>
+    </section>
+    
+    <style>
+        /* Fundo levemente cinza */
+        .portfolio {
+            background-color: #f5f5f5; /* Cor de fundo cinza claro */
+        }
+    
+        .btn-custom {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid black;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+        }
+    
+        .btn-custom:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+    
+    
+    
+
+    <style>
+        .portfolio-item img {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+    
+        .portfolio-item img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+    
+    
+    
+    <section class="relatos container py-5">
+    <h2 class="text-center">Relatos de Clientes</h2>
+    <div id="relatosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center p-4">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="../hercules-site/img/relato1.jpg" alt="João Silva" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Ótimo profissional, amei minha tatuagem!”</p>
+                        <strong>- João Silva</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center p-4">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="../hercules-site/img/relato2.jpg" alt="Maria Souza" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Atendimento impecável e trabalho incrível.”</p>
+                        <strong>- Lucas Mendes</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center p-4">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="../hercules-site/img/relato3.jpg" alt="Lucas Mendes" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Voltarei para mais tatuagens, recomendo!”</p>
+                        <strong>- Yara Souza</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#relatosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#relatosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+    
+    
+    
+    
+<section class="contato container py-5" style="background-color: #f5f5f5;">
+    <h2 class="text-center mb-4">Contato</h2>
+    <div class="row">
+        <!-- Coluna de texto -->
+        <div class="col-md-6">
+            <p>Sua história é única e merece ser eternizada. Aqui, cada tatuagem começa com um diálogo, uma troca de ideias e emoções que nos permite capturar a essência do que você deseja expressar. Se você está pronto para transformar sua jornada em uma obra de arte que ecoará por toda a eternidade, estamos aqui para tornar isso realidade.</p>
+            <p>Preencha o formulário abaixo e embarque nesta jornada conosco. Conte-nos um pouco sobre a história que você deseja marcar em sua pele, e Hércules Silva irá guiá-lo através deste processo criativo e transformador, garantindo que sua tatuagem seja tão única quanto sua própria história.</p>
+        </div>
+
+        <!-- Coluna do formulário -->
+        <div class="col-md-6">
+            <form action="https://formspree.io/f/mnnjenvz" method="POST">
+                <div class="mb-2">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" name="Nome" required>
+                </div>
+                <div class="mb-2">
+                    <label for="whatsapp" class="form-label">Whatsapp</label>
+                    <input type="text" class="form-control" id="whatsapp" name="WhatsApp" required>
+                </div>
+                <div class="mb-2">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="E-Mail" required>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Local da Tatuagem</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="braco" name="Localização" value="Braço">
+                        <label class="form-check-label" for="braco">Braço</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="pernas" name="Localização" value="Pernas">
+                        <label class="form-check-label" for="pernas">Pernas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="costas" name="Localização" value="Costas">
+                        <label class="form-check-label" for="costas">Costas</label>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="message" class="form-label">Descrição da Ideia</label>
+                    <textarea class="form-control" id="message" name="Mensagem" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark btn-md w-100">Enviar Formulário</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Botão "Veja mais projetos" */
+    .btn-dark {
+        border-color: black;
+        color: white;
+        background-color: black;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+        width: 100%;
+    }
+
+    .btn-dark:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+</style>
+
+
+    
+
+    <footer class="text-center py-3 bg-dark text-light">
+        &copy; 2025 Hercules Silva - Todos os direitos reservados
+    </footer>
+
+    <style>
+        .bg-dark{
+            background-color: #000;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
