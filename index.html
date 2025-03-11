@@ -13,7 +13,48 @@
     <meta property="og:title" content="Hercules Silva - Tattoo Artist">
     <meta property="og:description" content="Transformando histórias em arte com tatuagens únicas e personalizadas. Agende sua sessão agora!">
     <meta property="og:image" content="https://hercules-silva.com/img/icon.jpg">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff; /* Fundo branco */
+            color: #121212; /* Texto escuro para contraste */
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner {
+            background: url('banner.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h2 {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .portfolio img, .about img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .contato form {
+            max-width: 400px;
+            margin: auto;
+            background: #f8f9fa; /* Fundo claro para o formulário */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .btn-dark {
+            background-color: #121212; /* Botões pretos */
+            color: #ffffff;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s; /* Animação suave */
+        }
+        .btn-dark:hover {
+            background-color: #ffcc00; /* Mudança para o amarelo no hover */
+            transform: scale(1.05); /* Efeito de aumento sutil no hover */
+        }
+    </style>
 <body>
     <header class="banner text-center text-white">
         <div class="banner-content">
@@ -181,27 +222,36 @@
             <div class="carousel-item active">
                 <div class="d-flex justify-content-center align-items-center p-4">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="./img/relato1.jpg" alt="João Silva" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
-                        <p>“Ótimo profissional, amei minha tatuagem!”</p>
-                        <strong>- João Silva</strong>
+                        <img src="./img/relato1.jpg" alt="Douglas Caetano" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Sempre gostei de tatuagens, tenho várias e a minha preferida foi feita com Hércules”</p>
+                        <strong>- Douglas Caetano</strong>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center p-4">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="./img/relato2.jpg" alt="Maria Souza" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
-                        <p>“Atendimento impecável e trabalho incrível.”</p>
-                        <strong>- Lucas Mendes</strong>
+                        <img src="./img/relato2.jpg" alt="Vitor Félix" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Fiz uma arte tão incrível que toda vez que olho para ela eu me emociono.”</p>
+                        <strong>- Vitor Félix</strong>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center p-4">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="./img/relato3.jpg" alt="Lucas Mendes" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
-                        <p>“Voltarei para mais tatuagens, recomendo!”</p>
-                        <strong>- Yara Souza</strong>
+                        <img src="./img/relato3.jpg" alt="Regina Silva" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Curti muitos os traços, a educação e o profissionalismo, logo voltarei para fazer muito mais!”</p>
+                        <strong>- Regina Silva</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center p-4">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="./img/relato4.jpg" alt="Bruno Gonçalves" class="rounded-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                        <p>“Nunca consegui elabora algo, graças ao Hércules, consegui fazer a homenagem ao personagem que tanto amo. Obrigado.”</p>
+                        <strong>- Bruno Gonçalves</strong>
                     </div>
                 </div>
             </div>
