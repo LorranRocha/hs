@@ -1,3 +1,23 @@
 <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp)$">
     Require all denied
 </FilesMatch>
+
+
+RewriteEngine On
+
+# Garante que o mod_rewrite está ativado
+Options +FollowSymLinks
+
+# Define a base do diretório (se necessário)
+# RewriteBase /
+
+# Rota para /
+RewriteRule ^$ index.html [L]
+
+# Rota para /obrigado
+RewriteRule ^obrigado$ obrigado.html [L]
+
+# Garante que URLs inexistentes levem ao index.html para um SPA
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.html [L]
