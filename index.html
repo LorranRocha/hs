@@ -1,52 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hercules Silva - Tattoo Artist</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ffffff; /* Fundo branco */
-            color: #121212; /* Texto escuro para contraste */
-            font-family: 'Poppins', sans-serif;
-        }
-        .banner {
-            background: url('banner.jpg') center/cover no-repeat;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        h2 {
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .portfolio img, .about img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .contato form {
-            max-width: 400px;
-            margin: auto;
-            background: #f8f9fa; /* Fundo claro para o formulário */
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .btn-dark {
-            background-color: #121212; /* Botões pretos */
-            color: #ffffff;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.3s; /* Animação suave */
-        }
-        .btn-dark:hover {
-            background-color: #ffcc00; /* Mudança para o amarelo no hover */
-            transform: scale(1.05); /* Efeito de aumento sutil no hover */
-        }
-    </style>
-</head>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./img/icon.png"/>
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hercules-silva.com/">
+    <meta property="og:title" content="Hercules Silva - Tattoo Artist">
+    <meta property="og:description" content="Transformando histórias em arte com tatuagens únicas e personalizadas. Agende sua sessão agora!">
+    <meta property="og:image" content="https://hercules-silva.com/img/icon.jpg">
+    
 <body>
     <header class="banner text-center text-white">
         <div class="banner-content">
@@ -208,7 +175,7 @@
     
     
     <section class="relatos container py-5">
-    <h2 class="text-center">Relatos de Clientes</h2>
+    <h2 class="text-center">Depoimentos de Clientes</h2>
     <div id="relatosCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -295,6 +262,10 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="costas" name="Localização" value="Costas">
                         <label class="form-check-label" for="costas">Costas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="outro" name="Localização" value="Outro">
+                        <label class="form-check-label" for="outro">Outro: Diga na descrição</label>
                     </div>
                 </div>
                 <div class="mb-2">
